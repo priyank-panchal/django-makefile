@@ -9,7 +9,7 @@ To use this Makefile, simply copy it into your Django project's root directory a
 **venv**: creates a new Python virtual environment in the env directory.<br>
 **install**: installs the required packages from requirements.txt.<br>
 **db**: generates a new Django migration using the python manage.py makemigrations and python manage.py migrate command.<br>
-**run**: runs the Django development server using the python manage.py runserver command.
+**run**: runs the Django development server using the python manage.py runserver command.<br>
 **setup**: sets up the project.<br>
 **static**: generate a templates using the python manage.py collectstatic.<br>
 **showdb**: show the migrations using the python manage.py showmigrations <br>
