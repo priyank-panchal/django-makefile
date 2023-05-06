@@ -6,15 +6,14 @@ This is a general-purpose Makefile for Django projects. It provides convenient s
 To use this Makefile, simply copy it into your Django project's root directory and run make with one of the targets described below.
 
 # Available targets
-venv: creates a new Python virtual environment in the env directory.
-install: installs the required packages from requirements.txt.
-db: generates a new Django migration using the python manage.py makemigrations and python manage.py migrate command.
-run: runs the Django development server using the python manage.py runserver command.
-setup: sets up the project.
-static: generate a templates using the python manage.py collectstatic.
-showdb: show the migrations using the python manage.py showmigrations 
-
-clean: remove the env and __pycache__ files 
+**venv**: creates a new Python virtual environment in the env directory.<br>
+**install**: installs the required packages from requirements.txt.<br>
+**db**: generates a new Django migration using the python manage.py makemigrations and python manage.py migrate command.<br>
+**run**: runs the Django development server using the python manage.py runserver command.
+**setup**: sets up the project.<br>
+**static**: generate a templates using the python manage.py collectstatic.<br>
+**showdb**: show the migrations using the python manage.py showmigrations <br>
+**clean**: remove the env and __pycache__ files <br>
 
 
 # Customization
