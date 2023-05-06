@@ -1,7 +1,6 @@
-.PHONY: run db install setup clean
+.PHONY: run db install setup clean showdb
 SHELL := /bin/sh
 VENV_NAME = env
-LOCALPATH := ./src
 ENV_DIR := $(CURDIR)/$(VENV_NAME)
 ifeq ($(OS),Windows_NT)
 	PYTHON := $(ENV_DIR)/Scripts/python
@@ -11,6 +10,8 @@ else
 	PIP := $(ENV_DIR)/bin/pip3
 endif
 
+venv:
+	$(PYTHON) -m venv env
 run:
 	$(PYTHON) manage.py runserver
 
